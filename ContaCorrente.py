@@ -1,41 +1,4 @@
-"""                 Comentários de várias linhas.
 
-  CEUB  -  FATECS  -  BCC  -  ADS  -  Programação  -  Prof. Barbosa
-ctlr<d>, duplica linha. ctrl<y>, apaga linha. ctrl</>, comenta linha.
-
-- Com base nos conceitos de Programação Orientada a Objetos (POO)
-e inheritance (herança), implemente a entidade conta corrente com as
-especificidades de conta corrente de uma pessoa física e de uma pessoa
-jurídica.
-Levante as características comuns e as características
-específica de uma conta corrente de pessoa física e de conta corrente
-de pessoa jurídica.
-
-- Algumas características de uma conta corrente:
-nome, saldo, gênero, CPF, modalidade de PJ e CNPJ
-
-- Implemente estes itens:
-
-1- Crie a superclasse Conta
-2- Crie o método construtor com os atributos nome e saldo, teste
-3- Crie os métodos gets e sets da superclasse, teste
-4- Sobrescreva o método __str__ para ele retornar os atributos, teste
-5- Crie a subclasse Conta pessoa física
-6- Crie o método construtor com os atributos nome, saldo, genero e cpf
-7- Crie uma instância (objeto) de Conta_PF, teste
-8- Crie os métodos get e set
-9- Use os métodos da subclasse Conta_PF
-10- Use o método do Python vars.              Sintaxe: print(vars(objeto))
-11- Use o método do Python __dict__                    print(objeto.__dict__)
-12- Crie a subclasse Conta pessoa jurídica
-13- Crie o método construtor com os atributos nome, saldo, modalidade e cnpj
-14- Crie uma instância (objeto) de Conta_PJ
-15- Crie os método get e set, teste
-16- Crie o método deposito, ele recebe o valor do depósito e atualiza o saldo, teste
-17- Crie o método retirada, ele recebe o valor da retirada e atualiza o saldo, teste
-18- Refaça o método retirada usando RNs (Regras de Negócios) bancárias. Teste
-Prof. Barbosa
-"""
 class Conta(object):
     def __init__(self, nome, saldo=0.0):
         self.nome = nome
